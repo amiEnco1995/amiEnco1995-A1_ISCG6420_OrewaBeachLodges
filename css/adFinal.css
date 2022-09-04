@@ -1,0 +1,267 @@
+/*mobile first design*/
+/*delete after integration html decoration */
+html {
+    font-size: 62.5%;
+}
+/*delete after integration body decoration */
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#myAdvert {
+    height: 126px;
+    width: 360px;
+ margin: 0px; 
+ position: relative;  
+ overflow: hidden;
+}
+
+#backgroundAdFig {
+    margin: 0px; 
+    height: inherit;
+    width: inherit;
+    overflow: hidden;
+}
+
+#backgroundAdImg {
+    height: 126px;
+    width: 360px;
+}
+
+/* car */
+#autoDiv {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    height: inherit;
+    width: inherit;
+    animation-name: autoMove;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards; 
+     
+}
+
+
+#autoFig {
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    left: -114px;
+    
+}
+
+@keyframes autoMove {
+    0% {transform: translateX(-100%);}
+    20% {transform: translateX(-80%);}
+    40% {transform: translateX(-60%)}
+    60% {transform: translateX(-40%);}
+    80% {transform: translateX(-20%);}
+    100% {transform: translateX(0%);}
+}
+
+#autoImg {
+    transform: scale(0.5); 
+    
+}
+
+/*rims */
+#reifen1Fig {
+    position: absolute;
+    top: -42px;
+    left: -111px;
+    z-index: 2;
+    animation-name: rearMove;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+    animation-fill-mode: forwards;  
+   
+    
+}
+
+@keyframes rearMove {
+      100% {transform: rotate(360deg);}
+}
+
+#felge1Img {
+   
+    transform: scale(0.14);
+}
+
+#reifen2Fig {
+    position: absolute;
+    top: -12.3px;
+    left: 67.2px;
+    z-index: 3;
+    animation-name: frontMove;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+    animation-fill-mode: forwards;  
+   
+}
+
+@keyframes frontMove {
+   100% {transform: rotate(360deg);}
+}
+
+#felge2Img {
+   
+    transform: scale(0.14);
+}
+
+/* Text */
+
+#text1DivAd, #text2DivAd {
+    position: absolute;
+    z-index: 4;
+    top: 0%;
+    right: 0%;
+}
+
+#text1DivAd {
+    top: 0px;
+    left: 232px;
+    animation-name: textAdMove;
+    animation-duration: 1s;
+    Animation-timing-function: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 1s; 
+    opacity: 0%;
+
+}
+
+@keyframes textAdMove {
+    0% {transform: translateX(100%); opacity: 0%;}
+    20% {transform: translateX(80%); opacity: 0%;}
+    40% {transform: translateX(60%); opacity: 0%;}
+    60% {transform: translateX(40%); opacity: 0%;}
+    80% {transform: translateX(20%);opacity: 0%;}
+    100% {transform: translateX(0%);opacity: 100%;}
+}
+
+#text2DivAd {
+    top: 20px;
+    left: 232px;
+    animation-name: textAdMove;
+    animation-duration: 1s;
+    Animation-timing-function: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s; 
+    opacity: 0%;
+}
+
+
+#text1Ad, #text2Ad {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+#text1Ad {
+    color: red;
+}
+
+#text2Ad {
+    color: white;
+}
+
+/*button Ad */
+
+#buttonAdLink{
+    background-color: red;
+    width: 55px;
+    height: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 9;
+    top: 57px;
+    left: 232px;
+    animation-name: textAdMove;
+    animation-duration: 1s;
+    Animation-timing-function: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 3s; 
+    opacity: 0%;
+}
+
+#buttonAdMessage {
+    font-size: 7px;
+    color: white;
+    font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*end frame with restart button and created by text */ 
+
+#restartScreenDiv {
+    background-color: rgba(0,0,0, 0.4);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 6;
+    top: 0px;
+    left: 0px;
+    height: 126px;
+    width: 360px;
+    animation-name: endScreen;
+    animation-duration: 1s;
+    Animation-timing-function: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 7s; 
+    opacity: 0%;
+    
+    
+}
+
+@keyframes endScreen {
+    0% { opacity: 0%;}
+    20% { opacity: 20%;}
+    40% { opacity: 40%;}
+    60% { opacity: 60%;}
+    80% {opacity: 80%;}
+    100% {opacity: 100%;}
+}
+
+
+#restartButtonAd {
+    position: relative;
+    top: -10%;
+    left: 2%;
+    transform: scale(0.8);
+    z-index: 8;
+}
+
+#createdAdByDiv {
+    position: absolute;
+    top: 99px;
+    left: 170px;
+    z-index: 7;
+   
+   
+}
+
+#createdAdByText {
+    color: white;
+    font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 9px; 
+    opacity: 0%;
+    animation-name: adCreatedBy;
+    animation-duration: 4s;
+    Animation-timing-function: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 7s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes adCreatedBy {
+    0% { opacity: 100%; color: white;}
+    20% { opacity: 100%; color: lightyellow;}
+    40% { opacity: 100%; color: lightpink;}
+    60% { opacity: 100%; color: white;}
+    80% {opacity: 100%; color: lightyellow;}
+    100% {opacity: 100%; color: lightpink;}
+}
+

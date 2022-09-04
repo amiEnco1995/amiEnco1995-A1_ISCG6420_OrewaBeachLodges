@@ -1,0 +1,2087 @@
+
+/* Will delete html code during integration */
+html {
+    font-size: 62.5%;
+}
+
+#bookingSystem {
+    width: 95vw;
+    height: 50vh;
+    overflow-y: hidden;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    border: 0.2rem solid cornflowerblue; 
+}
+
+.pageContainer {
+    width: 100%;
+    height: 95%; 
+    margin: 0rem 1.8rem;
+
+  
+}
+
+#pageOne{
+    display: block;
+}
+
+#pageTwo, #pageThree, #pageFour, #pageFive {
+    display: none;
+}
+
+.pageSectionList {
+    margin: 0px;
+    padding: 1.5rem 0px 1.5rem 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: inherit;
+    height: 1rem;
+    
+    
+}
+
+.pageSection {
+    margin-right: 0rem; 
+    padding: 0.1rem 1.2rem;
+    font-family: 'Open Sans' , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: white; 
+    border-left: 0.1rem solid white;  
+}
+
+.sectionOne {
+    background-color: rgb(138, 167, 221);
+}
+
+.sectionInactive {
+    background-color: rgb(212, 218, 231);
+}
+
+
+/*progress Bar */
+.progressBar {
+    width: inherit;
+    height: 1rem;
+    background-color: rgb(212, 218, 231);
+    margin: 0rem 0rem; 
+   
+}
+
+.percentage {
+    background-color: rgb(138, 167, 221);
+    height: 1rem;
+    margin: 0px;
+    width: 25%; /* change width with JS after every button click NEXT and vice versa */
+} 
+
+
+
+.pageSection:hover {
+    transform: scale(1.2);
+}
+
+.pgPercentage {
+    font-family: 'Open Sans' , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+
+}
+
+.form {
+    font-family: 'Open Sans' , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+   
+}
+
+#formOne {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-areas: "checkIn . img" "checkOut . img" ". . next";
+    justify-items: center;
+    height: inherit;
+    width: inherit; 
+
+}
+
+.labels{
+    margin-bottom: 1rem;
+}
+#checkInDiv {
+    grid-area: checkIn;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 5rem 0rem 1rem 0rem; 
+   
+}
+
+#checkOutDiv {
+    grid-area: checkOut; 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 3rem 0rem 1rem 0rem; 
+}
+
+.inputBox:hover {
+    box-shadow: 1px 1px 5px rgb(165, 194, 248);
+}
+
+.btnNextDiv {
+    grid-area: next;
+    justify-self: end;
+    align-self: flex-start;
+} 
+
+.btnNext, .btnPrev{ 
+    width: 8rem; 
+    height: 2rem; 
+    margin-top: 1rem;
+    border: 0.1rem solid rgb(138, 167, 221);
+    border-radius: 0.3rem;
+    background-color: rgb(138, 167, 221);
+    color: white; 
+    
+}
+
+.btnNext:hover, .btnPrev:hover{
+    background-color: rgb(170, 183, 209);
+    border: 0.1rem solid white;
+     
+}
+
+#imagePageOneFig {
+    height: inherit;
+    width: 11rem;
+    overflow: hidden;
+    grid-area: img;
+    margin: 2rem 0rem 0rem 0rem ;
+}
+
+#imagePageOne {
+    object-fit: scale-down;
+}
+
+
+
+/*Page two design */
+
+.sectionTwo {
+    background-color: rgb(138, 167, 221);
+}
+
+#pgTwoPercentage {
+    width: 50%; 
+}
+    
+#formTwo {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-areas: 
+    "imgPrem premInfo premPrice" 
+    "imgStandard standInfo standPrice" 
+    "previous . next";
+    justify-items: center;
+    height: 13rem;
+    width: inherit; 
+}
+
+.btnPrevDiv {
+    grid-area: previous; 
+    justify-self: baseline;
+}
+
+#premierDiv {
+    grid-area: imgPrem;
+    overflow: hidden;
+    height: 10rem;
+    width:inherit; 
+    
+}
+
+#premierImage, #standardImage{
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 8rem;
+    width: 12rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+#premiumInfo {
+    grid-area: premInfo;
+}
+
+#premPrice {
+    grid-area:premPrice;
+}
+
+#standardDiv {
+    grid-area: imgStandard;
+    overflow: hidden;
+    height: 10rem;
+    width:inherit; 
+    
+}
+
+#standInfo {
+    grid-area: standInfo;
+}
+
+#standPrice {
+    grid-area: standPrice; 
+}
+
+.bedInfo {
+    height: 5rem;
+    width: 3rem; 
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "fill fill"
+    " max max" 
+    " radio radio"
+    " adult children";
+    justify-items: left;
+    height: inherit;
+    width: inherit; 
+    
+}
+
+.fill {
+    height: 2rem;   
+    width: 1rem;
+    grid-area: fill;
+}
+
+.heading {
+    font-size: 0.7rem;
+    font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.info {
+    font-size: 0.8rem;
+    font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 0px; 
+}
+
+.labelSize {
+    font-size: 0.7rem;
+}
+
+#maxPersonDiv {
+    grid-area: max;
+    
+}
+
+.radioRateDiv {
+    grid-area: radio;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+
+#adultDiv {
+    grid-area: adult;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    
+}
+
+#childDiv {
+    grid-area: children; 
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+       
+}
+
+#numMaxPerson {
+    display: inline;
+}
+
+.mainTitle {
+    font-size: 0.8rem;
+    margin: 0.5rem 0rem;
+}
+
+.bedPrice {
+    height: 5rem;
+    width: 3rem; 
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "fill2 fill2"
+    " min min" 
+    " . price"
+    " . rooms";
+    justify-items: left;
+    height: inherit;
+    width: inherit; 
+}
+
+.fill2 {
+    grid-area: fill2; 
+    height: 2rem;   
+    width: 1rem;
+}
+
+.minStay {
+    grid-area: min;
+}
+
+.priceStay {
+    grid-area: price;
+    text-align: right;
+}
+
+.roomDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: rooms;
+    margin-left: 2rem;
+    justify-content: flex-start;
+}
+
+
+/*Page three design */
+
+.sectionThree {
+    background-color: rgb(138, 167, 221);
+}
+
+#pgThreePercentage {
+    width: 75%; 
+}
+
+#formThree {
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "infoCont infoCont" 
+    "infoCont infoCont" 
+    "previous next";
+    justify-items: center;
+    height: 33rem;
+    width: inherit; 
+}
+
+.detailsInputContainer {
+    grid-area: infoCont;
+    overflow-y: auto; 
+    font-size: 1rem;
+    font-family: 'open sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.persInfoCont {
+  
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "pInfoTitle pInfoTitle" 
+    "lblFN txtFN" 
+    "lblLN txtLN"
+    "lblDOB dtpDOB"
+    "lblStreetAd txtStreetAd" 
+    "lblSuburb txtSuburb"
+    "lblCity txtCity" 
+    "lblEmail txtEmail" 
+    "lblETA timeETA"
+    "lblTravel lstTravel" ;
+    
+    justify-items: baseline;
+    height: fit-content;
+    width: inherit; 
+    column-gap: 0.5rem;
+     row-gap: 0.4rem; 
+     
+    }
+
+.persInfoSubCont {
+    align-self: center;
+}
+    
+#pInfoTitle {
+    grid-area: pInfoTitle;
+}
+.lblFN {
+    grid-area: lblFN;
+}
+
+#firstNameDiv {
+    grid-area: txtFN;
+}
+
+.lblLN {
+    grid-area: lblLN;
+}
+
+#lastNameDiv {
+    grid-area: txtLN; 
+}
+
+.lblDOB {
+    grid-area: lblDOB;
+}
+
+#dateOfBirthDiv {
+    grid-area: dtpDOB;
+}
+
+.lblStreetAd {
+    grid-area: lblStreetAd;
+}
+
+#streetAddressDiv {
+    grid-area: txtStreetAd; 
+}
+
+.lblSuburb {
+    grid-area: lblSuburb;
+}
+
+#suburbDiv {
+    grid-area: txtSuburb;
+}
+.lblCity {
+    grid-area: lblCity;
+}
+
+#cityDiv {
+    grid-area: txtCity;
+}
+
+.lblEmail {
+    grid-area: lblEmail;
+}
+
+#emailDiv {
+    grid-area: txtEmail;
+}
+
+.lblETA {
+    grid-area: lblETA;
+
+}
+
+#etaDiv {
+    grid-area: timeETA;
+}
+
+.lblTravel {
+    grid-area: lblTravel; 
+}
+
+#travelPurposeDiv {
+    grid-area: lstTravel; 
+}
+
+.labels3 {
+    font-size: 1rem;
+    align-self: center;
+    justify-self: end;
+}
+
+#firstName, #suburb, #city {
+    width: 8rem;
+}
+
+#email, #streetAddress {
+    width: 14rem; 
+}
+
+.sliderContainer {
+    width: 100%;
+}
+
+/* Slider Design */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 0.4rem; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; 
+  }
+  
+  /* The slider handle */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 1rem; /* Set a specific slider handle width */
+    height: 2rem; /* Slider handle height */
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    background: rgb(86, 135, 226); 
+    cursor: pointer; /* Cursor on hover */
+}
+
+.prefCont {
+    
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "prefTitle prefTitle" 
+    "lblParking parkingYesNo" 
+    "lblCooking cookingYesNo"
+    "lblEquipment equipmentBookDiv"
+    "lblColor colorSlipperDiv" 
+    "lblRate lblRate"
+    "lastPrefCont lastPrefCont" ;
+    
+    justify-items: baseline;
+    height: 100%;
+    width: inherit; 
+    column-gap: 0.5rem;
+    row-gap: 0.4rem; 
+    
+}
+
+#prefTitle {
+    grid-area: prefTitle;
+}
+
+.lblParking {
+    grid-area: lblParking;
+}
+
+.parkingYesNo {
+    grid-area: parkingYesNo;
+}
+
+.lblCooking {
+    grid-area: lblCooking;
+}
+
+.cookingYesNo {
+    grid-area: cookingYesNo;
+}
+
+.lblEquipment {
+    grid-area: lblEquipment;
+}
+
+.equipmentBookDiv {
+    grid-area: equipmentBookDiv;
+}
+
+.lblColor {
+    grid-area: lblColor;
+}
+
+.colorSlipperDiv {
+    grid-area: colorSlipperDiv;
+}
+
+.lblRate {
+    grid-area: lblRate;
+    justify-self: baseline;
+}
+
+.lastPrefCont {
+    grid-area: lastPrefCont; 
+    font-family: 'open sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#output {
+    font-weight: bold;
+}
+#outputValue {
+    margin-left: 1rem
+}
+
+.prefSubCont {
+    align-self: center;
+    width: max-content;
+}
+
+.spanSpace{
+    margin-left: 0.5rem;
+    font-weight: 100;
+}
+
+/*Page Four Design */
+
+.sectionFour {
+    background-color: rgb(138, 167, 221);
+}
+
+#pgFourPercentage {
+    width: 100%; 
+}
+
+#formFour {
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "infoCont infoCont" 
+    "infoCont infoCont" 
+    "previous next";
+    justify-items: center;
+    height: 33rem;
+    width: inherit; 
+}
+
+.conservationDiv {
+   width: 90%; 
+}
+
+.checkInSumCont {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "checkInTitle checkInTitle checkInTitle" 
+    "lblChkIn4 pCheckIn ." 
+    "lblChkOut4 pCheckOut ."
+    ". . pTotalStay";
+     
+    justify-items: baseline;
+    height: fit-content;
+    width: inherit; 
+    column-gap: 0.5rem;
+    row-gap: 0.4rem; 
+    align-items: center;
+}
+
+#checkInTitle {
+    grid-area: checkInTitle;
+}
+
+.lblChkIn4 {
+    grid-area: lblChkIn4;
+}
+
+.pCheckIn {
+    grid-area: pCheckIn;
+}
+
+.lblChkOut4 {
+    grid-area: lblChkOut4;
+}
+
+.pCheckOut {
+    grid-area: pCheckOut;
+}
+
+.pTotalStay {
+    grid-area: pTotalStay; 
+}
+
+.roomSumCont {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "roomSumTitle roomSumTitle roomSumTitle" 
+    "lblRmTypePrem pRoomTypePrem ." 
+    "lblAmountRmPrem pAmountRmPrem ."
+    "lblAmountAdultsPrem pAmountAdultsPrem ."
+    "lblAmountChildPrem pAmountChildPrem ."
+    "lblGuestTotalPrem pGuestTotalPrem ."
+    ". . pTotalCost";
+     
+    justify-items: baseline;
+    height: fit-content;
+    width: inherit; 
+    column-gap: 0.5rem;
+    row-gap: 0.4rem; 
+    align-items: center;
+}
+
+#roomSumTitle {
+    grid-area: roomSumTitle;
+}
+
+.lblRmTypePrem {
+    grid-area: lblRmTypePrem;
+}
+
+.pRoomTypePrem {
+    grid-area: pRoomTypePrem;
+}
+
+.lblAmountRmPrem {
+    grid-area: lblAmountRmPrem; 
+}
+
+.pAmountRmPrem{
+    grid-area: pAmountRmPrem;
+}
+
+.lblAmountAdultsPrem{
+    grid-area: lblAmountAdultsPrem;
+}
+
+.pAmountAdultsPrem{
+    grid-area: pAmountAdultsPrem; 
+}
+
+.lblAmountChildPrem{
+    grid-area: lblAmountChildPrem;
+}
+
+.pAmountChildPrem {
+    grid-area: pAmountChildPrem; 
+}
+
+.standRm {
+    grid-area: standRm; 
+}
+
+.lblGuestTotalPrem{
+    grid-area: lblGuestTotalPrem; 
+}
+
+.pGuestTotalPrem{
+    grid-area: pGuestTotalPrem; 
+}
+
+.pTotalCost {
+    grid-area: pTotalCost; 
+}
+
+.labels4 {
+    font-weight: bold;
+}
+
+/*Page Five Design */
+
+#pgFivePercentage {
+    width: 100%; 
+}
+
+#formFive {
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "infoCont infoCont" 
+    "infoCont infoCont" 
+    ". next";
+    justify-items: center;
+    height: 33rem;
+    width: inherit; 
+}
+
+.trial {
+    background-color: yellow;
+    height:inherit;
+    width: inherit;
+}
+
+.checkIconDiv {
+    height: 10rem;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+}
+
+.checkIcon {
+    transform: scale(4.5);
+    color: rgb(138, 167, 221);
+}
+
+.goodbyeFont2 {
+    font-size: 1.2rem;
+}
+
+
+/*media queries for Booking System */
+/*Page One, Page Two, Page Three, Page Four, Page 5*/
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    /*page One */
+    .pageSection {
+        font-size: 1.2rem;
+    }
+
+    .btnNextDiv {
+        margin-top: 0rem;
+    }
+
+    /*page Two */
+    #formTwo {
+        height: 17rem;
+    }
+
+    #premierDiv, #standardDiv {
+        height: 15rem;
+    }
+
+    #premierImage, #standardImage {
+        height: 12rem;
+    }
+
+    #childDiv {
+        margin-left: 0.1rem;
+    }
+   /*page three */
+   #formThree, #formFour, #formFive {
+    height: 42rem; 
+   }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px){
+    /*page One */
+    .pageContainer {
+        margin: 0rem 6rem;
+    }
+
+    #imagePageOneFig {
+        height: 22rem; 
+    }
+    /*page two */
+    #childDiv {
+        margin-left: 0.3rem;
+    }
+
+    #formTwo {
+        height: 17rem;
+    }
+
+    #premierDiv, #standardDiv {
+        height: 15rem;
+    }
+
+    #premierImage, #standardImage {
+        height: 12rem;
+    }
+    .heading {
+        font-size: 1rem;
+    }
+    .info, .labelSize {
+        font-size: 1rem;
+    }
+    
+    .radioRateDiv {
+        margin: 2.4rem 0rem; 
+    }
+    /*page three */
+    #formThree, #formFour, #formFive {
+        height: 42rem; 
+       }
+
+    .labels3 {
+        font-size: 1.1rem;
+    }
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+
+    /*page One */
+    .pageContainer {
+        margin: 0rem 4rem;
+    }
+
+    .pageSectionList {
+        padding: 2.5rem 0px 2.5rem 0px;
+    }
+
+    .pageSection {
+        font-size: 1.5rem;
+        padding: 0.5rem 2.2rem;
+    }
+
+    .progressBar {
+        width: inherit;
+        height: 2rem;
+        background-color: rgb(212, 218, 231);
+        margin: 0rem 0rem; 
+       
+    }
+    
+    .percentage {
+         height: 2rem;
+    } 
+    
+    .pgPercentage {
+          font-size: 1.5rem;
+    
+    }
+
+   .form{
+    font-size: 1.5rem;
+    }
+
+    #imagePageOneFig {
+        height: 20rem; 
+    }
+
+    
+
+    /*page two */
+    #childDiv {
+        margin-left: 0.3rem;
+    }
+
+    #formTwo {
+        height: 15rem;
+    }
+
+    #premierDiv, #standardDiv {
+        height: 12rem;
+    }
+
+    #premierImage, #standardImage {
+        height: 10rem;
+        width: 19rem;
+    }
+    .heading {
+        font-size: 1rem;
+    }
+    .info, .labelSize {
+        font-size: 1rem;
+    }
+    
+    .radioRateDiv {
+        margin: 2.4rem 0rem; 
+    }
+
+    .mainTitle {
+        font-size: 1.2rem;
+    }
+
+    /*page three */
+    #formThree, #formFour, #formFive {
+        height: 38rem; 
+       }
+
+    .labels3 {
+        font-size: 1.5rem;
+    }
+
+    .inputSize {
+        font-size: 1.3rem;
+    }
+
+    #pInfoTitle {
+        font-size: 2rem;;
+    }
+
+    #prefTitle, #paymentTitle, #roomSumTitle, #checkInTitle, .goodbyeFont{
+        font-size: 2rem; 
+    }
+    #firstName, #suburb, #city {
+        width: 16rem;
+    }
+    #email, #streetAddress {
+        width: 23rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 850px)  {
+
+    /*page One */
+    .pageContainer {
+        margin: 0rem 5rem;
+    }
+
+    .pageSectionList {
+        padding: 2.5rem 0px 2.5rem 0px;
+    }
+
+    .pageSection {
+        font-size: 1.7rem;
+    }
+
+    .progressBar {
+        width: inherit;
+        height: 2rem;
+        background-color: rgb(212, 218, 231);
+        margin: 0rem 0rem; 
+       
+    }
+    
+    .percentage {
+         height: 2rem;
+    } 
+    
+    .pgPercentage {
+          font-size: 1.5rem;
+    
+    }
+
+   .form{
+    font-size: 1.5rem;
+    }
+
+    #imagePageOneFig {
+        height: 25rem; 
+    }
+
+    .btnNextDiv {
+        margin-top: 1rem;
+    }
+
+    .btnNext, .btnPrev{
+        width: 11rem; 
+        height: 2.5rem; 
+
+        
+    }
+
+     /*page two */
+     #childDiv {
+        margin-left: 0.3rem;
+    }
+
+    #formTwo {
+        height: 15rem;
+    }
+
+    #premierDiv, #standardDiv {
+        height: 12rem;
+    }
+
+    #premierImage, #standardImage {
+        height: 10rem;
+        width: 19rem;
+       
+    }
+    .heading {
+        font-size: 1rem;
+    }
+    
+    .info, .labelSize {
+        font-size: 1rem;
+    }
+    
+    .radioRateDiv {
+        margin: 2.4rem 0rem; 
+    }
+
+     /*page three */
+     #formThree, #formFour, #formFive {
+        height: 38rem; 
+       }
+
+    .labels3 {
+        font-size: 1.5rem;
+    }
+
+    .inputSize {
+        font-size: 1.3rem;
+    }
+
+    #pInfoTitle {
+        font-size: 2rem;;
+    }
+
+    #prefTitle, #paymentTitle, #roomSumTitle, #checkInTitle, .goodbyeFont{
+        font-size: 2rem; 
+    }
+    #firstName, #suburb, #city {
+        width: 16rem;
+    }
+    #email, #streetAddress {
+        width: 23rem;
+    }
+
+    .persInfoCont {
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 950px) {
+    /*page One */
+        .pageContainer {
+            margin: 0rem 7rem;
+        }
+    
+        .pageSectionList {
+            padding: 2.5rem 0rem 2.5rem 0rem;
+        }
+    
+        .pageSection {
+            font-size: 1.3rem;
+            padding: 0.5rem 4.2rem;
+        }
+    
+        .progressBar {
+            width: inherit;
+            height: 2rem;
+            background-color: rgb(212, 218, 231);
+            margin: 0rem 0rem; 
+           
+        }
+        
+        .percentage {
+             height: 2rem;
+        } 
+        
+        .pgPercentage {
+              font-size: 1.5rem;
+        
+        }
+    
+       .form{
+        font-size: 1.5rem;
+        }
+    
+        #imagePageOneFig {
+            height: 29rem; 
+            width: 15rem;
+        }
+    
+        .btnNextDiv {
+            margin-top: 1rem;
+        }
+    
+        .btnNext, .btnPrev{
+            width: 11rem; 
+            height: 2.5rem; 
+    
+            
+        }
+
+          /*page two */
+     #childDiv {
+        margin-left: 0.3rem;
+    }
+
+    #formTwo {
+        height: 15rem;
+    }
+
+    #premierDiv, #standardDiv {
+        height: 12rem;
+    }
+
+    #premierImage, #standardImage {
+        height: 10rem;
+        width: 19rem;
+        
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+    .info, .labelSize {
+        font-size: 1rem;
+    }
+    
+    .radioRateDiv {
+        margin: 2.4rem 0rem; 
+    }
+
+       /*page three */
+       #formThree, #formFour, #formFive {
+        height: 38rem; 
+       }
+
+    .labels3 {
+        font-size: 1.5rem;
+    }
+
+    .inputSize {
+        font-size: 1.3rem;
+    }
+
+    #pInfoTitle {
+        font-size: 2rem;;
+    }
+
+    #prefTitle, #paymentTitle, #roomSumTitle, #checkInTitle, .goodbyeFont{
+        font-size: 2rem; 
+    }
+    #firstName, #suburb, #city {
+        width: 16rem;
+    }
+    #email, #streetAddress {
+        width: 23rem;
+    }
+
+    .persInfoCont {
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1100px){
+
+#bookingSystem{
+    width: 50vw;
+    height: 62vh;
+}    
+    .pageContainer {
+        margin: 0rem 5rem;
+    }
+
+    .pageSectionList {
+        padding: 2.5rem 0px 2.5rem 0px;
+    }
+
+    .pageSection {
+        font-size: 1.3rem;
+        padding: 1rem 1.3rem;
+    }
+
+    .progressBar {
+        width: inherit;
+        height: 2rem;
+        background-color: rgb(212, 218, 231);
+        margin: 0rem 0rem; 
+       
+    }
+    
+    .percentage {
+         height: 2rem;
+    } 
+    
+    .pgPercentage {
+          font-size: 1.4rem;
+    
+    }
+
+   .form{
+    font-size: 1.5rem;
+    }
+
+    #imagePageOneFig {
+        height: 40rem; 
+        width: 12rem;
+    }
+
+    .btnNextDiv {
+        margin-top: 0rem;
+    }
+
+    .btnNext,.btnPrev{
+        width: 11rem; 
+        height: 2.5rem; 
+
+        
+    }
+
+          /*page two */
+          #childDiv {
+            margin-left: 0.3rem;
+        }
+    
+        #formTwo {
+            height: 14rem;
+            margin-top: 4rem
+        }
+    
+        #premierDiv, #standardDiv {
+            height: 12rem;
+        }
+    
+        #premierImage, #standardImage {
+            height: 10rem;
+            width: 12rem;
+            
+        }
+    
+        .heading {
+            font-size: 1rem;
+        }
+        .info, .labelSize {
+            font-size: 1rem;
+        }
+
+        .mainTitle {
+            font-size: 1.2rem;
+           }
+
+           .radioRateDiv {
+            margin: 2.4rem 0rem; 
+        }
+
+         /*page three */
+       #formThree, #formFour, #formFive {
+        height: 52rem; 
+       }
+
+    .labels3 {
+        font-size: 1.2rem;
+    }
+
+    .inputSize {
+        font-size: 1.3rem;
+    }
+
+    #pInfoTitle {
+        font-size: 2rem;;
+    }
+
+    #prefTitle, #paymentTitle, #roomSumTitle, #checkInTitle, .goodbyeFont{
+        font-size: 2rem; 
+    }
+    #firstName, #suburb, #city {
+        width: 16rem;
+    }
+    #email, #streetAddress {
+        width: 23rem;
+    }
+
+    .persInfoCont {
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1278px){
+
+    #bookingSystem{
+        width: 50vw;
+        height: 57vh;
+    }    
+    .pageContainer {
+            margin: 0rem 8rem;
+        }
+    
+    .pageSectionList {
+            padding: 2.5rem 0px 2.5rem 0px;
+        }
+    
+    .pageSection {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.7rem;
+        }
+    
+    .progressBar {
+            width: inherit;
+            height: 2rem;
+            background-color: rgb(212, 218, 231);
+            margin: 0rem 0rem; 
+           
+        }
+        
+    .percentage {
+             height: 2rem;
+        } 
+        
+     .pgPercentage {
+              font-size: 1.5rem;
+        
+        }
+    
+    .form{
+        font-size: 1.5rem;
+        }
+    
+    #imagePageOneFig {
+            height: 31rem; 
+            width: 12rem;
+        }
+    
+    .btnNextDiv {
+            margin-top: 1rem;
+        }
+    
+     .btnNext, .btnPrev {
+            width: 11rem; 
+            height: 2.5rem; 
+    
+            
+        }
+
+           /*page two */
+           #childDiv {
+            margin-left: 0.3rem;
+        }
+    
+        #formTwo {
+            height: 14rem;
+            margin-top: 4rem
+        }
+    
+        #premierDiv, #standardDiv {
+            height: 12rem;
+        }
+    
+        #premierImage, #standardImage {
+            height: 10rem;
+            width: 12rem;
+            
+        }
+    
+        .heading {
+            font-size: 1rem;
+        }
+        .info, .labelSize {
+            font-size: 1rem;
+        }
+        
+        .mainTitle {
+            font-size: 1.2rem;
+        }
+
+           .radioRateDiv {
+            margin: 2.4rem 0rem; 
+        }
+
+      
+
+             /*page three */
+       #formThree, #formFour, #formFive {
+        height: 45rem; 
+       }
+
+    .labels3 {
+        font-size: 1.2rem;
+    }
+
+    .inputSize {
+        font-size: 1.3rem;
+    }
+
+    #pInfoTitle {
+        font-size: 2rem;;
+    }
+
+    #prefTitle, #paymentTitle, #roomSumTitle, #checkInTitle, .goodbyeFont{
+        font-size: 2rem; 
+    }
+    #firstName, #suburb, #city {
+        width: 16rem;
+    }
+    #email, #streetAddress {
+        width: 23rem;
+    }
+
+    .persInfoCont {
+        row-gap: 1rem;
+    }
+} 
+
+@media screen and (min-width: 1279px) and (max-width: 1324px){
+
+    #bookingSystem{
+        width: 50vw;
+        height: 60vh;
+    }    
+    .pageContainer {
+            margin: 0rem 9rem;
+        }
+    
+    .pageSectionList {
+            padding: 2.5rem 0px 2.5rem 0px;
+        }
+    
+    .pageSection {
+        font-size: 1.2rem;
+        padding: 0.5rem 2.5rem;
+        }
+    
+    .progressBar {
+            width: inherit;
+            height: 2rem;
+            background-color: rgb(212, 218, 231);
+            margin: 0rem 0rem; 
+           
+        }
+        
+    .percentage {
+             height: 2rem;
+        } 
+        
+     .pgPercentage {
+              font-size: 1.5rem;
+        
+        }
+    
+    .form{
+        font-size: 1.7rem;
+        }
+    
+    #imagePageOneFig {
+        height: 36rem;
+        
+        }
+    
+    .btnNextDiv {
+            margin-top: 1rem;
+        }
+    
+     .btnNext, .btnPrev {
+        width: 14rem;
+        height: 3.5rem;
+    
+            
+        }
+
+        .mainTitle {
+            font-size: 1.5rem;
+        }
+
+        #checkInDiv{
+            margin: 9rem 0rem 1rem 0rem;
+        }
+    /*page two */
+    #childDiv {
+        margin-left: 0.3rem;
+    }
+
+    #formTwo {
+        height: 14rem;
+        margin-top: 5rem
+    }
+
+    #premierDiv, #standardDiv {
+        height: 12rem;
+    }
+
+    #premierImage, #standardImage {
+        height: 10rem;
+        width: 12rem;
+        
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+    .info, .labelSize {
+        font-size: 1rem;
+    }
+    
+    .mainTitle {
+        font-size: 1.2rem;
+       }
+ .radioRateDiv {
+        margin: 2.4rem 0rem; 
+    }
+
+ 
+    /*page three */
+       #formThree, #formFour, #formFive {
+        height: 45rem; 
+       }
+
+    .labels3 {
+        font-size: 1.2rem;
+    }
+
+    .inputSize {
+        font-size: 1.3rem;
+    }
+
+    #pInfoTitle {
+        font-size: 2rem;;
+    }
+
+    #prefTitle, #paymentTitle, #roomSumTitle, #checkInTitle, .goodbyeFont{
+        font-size: 2rem; 
+    }
+    #firstName, #suburb, #city {
+        width: 16rem;
+    }
+    #email, #streetAddress {
+        width: 23rem;
+    }
+
+    .persInfoCont {
+        row-gap: 1rem;
+    }   
+       
+}
+
+@media screen and (min-width: 1325px) and (max-width: 1698px){
+
+    #bookingSystem{
+        width: 50vw;
+        height: 90vh;
+    }    
+    .pageContainer {
+            margin: 0rem 9rem;
+        }
+    
+    .pageSectionList {
+            padding: 2.5rem 0px 2.5rem 0px;
+        }
+    
+    .pageSection {
+        font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+        }
+    
+    .progressBar {
+            width: inherit;
+            height: 2rem;
+            background-color: rgb(212, 218, 231);
+            margin: 0rem 0rem; 
+           
+        }
+        
+    .percentage {
+             height: 2rem;
+        } 
+        
+     .pgPercentage {
+              font-size: 1.5rem;
+        
+        }
+    
+    .form{
+        font-size: 1.7rem;
+        }
+    
+    #imagePageOneFig {
+        height: 65rem;
+        width: 100%;
+        
+        }
+   
+    
+     .btnNext, .btnPrev{
+        width: 14rem;
+        height: 3.5rem;
+    
+            
+        }
+
+        #checkInDiv{
+            margin: 12rem 0rem 1rem 0rem;
+        }
+
+        #imagePageOne {
+            transform: translateX(-12rem) translateY(-22rem);
+        } 
+    
+         /*page two */
+    #childDiv {
+        margin-left: 0.3rem;
+    }
+
+    #formTwo {
+        height: 16rem;
+        margin-top: 5rem
+    }
+
+    #premierDiv, #standardDiv {
+        height: 26rem;
+    }
+
+    #premierImage, #standardImage {
+        height: 16rem;
+        width: 19rem;
+        
+    }
+
+    .mainTitle {
+        font-size: 1.5rem;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+    .info, .labelSize {
+        font-size: 1.1rem;
+    }
+
+    .fill, .fill2 {
+        height: 4rem;
+    }
+    .radioRateDiv {
+        margin: 2.4rem 0rem; 
+    }
+
+     /*page three */
+     #formThree, #formFour, #formFive {
+        height: 82rem; 
+       }
+
+    .labels3 {
+        font-size: 1.8rem;
+        margin-right: 0.5rem; 
+    }
+
+    .inputSize {
+        font-size: 1.8rem;
+    }
+
+    #pInfoTitle {
+        font-size: 2rem;;
+    }
+
+    #prefTitle, #paymentTitle, #roomSumTitle, #checkInTitle {
+        font-size: 2rem; 
+    }
+    #firstName, #suburb, #city {
+        width: 16rem;
+    }
+    #email, #streetAddress {
+        width: 23rem;
+    }
+
+    .persInfoCont {
+        row-gap: 0.5rem;
+    }  
+    
+    .prefCont {
+        column-gap: 1rem;
+    }
+
+    /*page five */
+    .goodbyeFont {
+        font-size: 2.5rem;
+    }
+
+    .goodbyeFont2{
+        font-size: 1.5rem;
+    }
+
+    .checkIcon {
+        transform: scale(5.5);
+    }
+
+    .checkIconDiv {
+        padding-top: 4rem;
+    }
+
+
+}
+ 
+@media screen and (min-width: 1699px) and (max-width: 1899px){
+
+    #bookingSystem{
+        width: 50vw;
+        height: 90vh;
+    }    
+    .pageContainer {
+            margin: 0rem 9rem;
+        }
+    
+    .pageSectionList {
+            padding: 2.5rem 0px 2.5rem 0px;
+        }
+    
+    .pageSection {
+        font-size: 1.5rem;
+    padding: 0.5rem 4.5rem;
+        }
+    
+    .progressBar {
+            width: inherit;
+            height: 2rem;
+            background-color: rgb(212, 218, 231);
+            margin: 0rem 0rem; 
+           
+        }
+        
+    .percentage {
+             height: 2rem;
+        } 
+        
+     .pgPercentage {
+              font-size: 1.5rem;
+        
+        }
+    
+    .form{
+        font-size: 1.7rem;
+        }
+    
+    #imagePageOneFig {
+        height: 65rem;
+        width: 100%;
+        
+        }
+    
+   
+    
+     .btnNext, .btnPrev{
+        width: 14rem;
+        height: 3.5rem;
+    
+            
+        }
+
+        #checkInDiv{
+            margin: 12rem 0rem 1rem 0rem;
+        }
+
+        #imagePageOne {
+            transform: translateX(-12rem) translateY(-22rem);
+        }
+
+         
+         /*page two */
+    #childDiv {
+        margin-left: 0.3rem;
+    }
+
+    #formTwo {
+        height: 16rem;
+        margin-top: 5rem
+    }
+
+    #premierDiv, #standardDiv {
+        height: 26rem;
+    }
+
+    #premierImage, #standardImage {
+        height: 16rem;
+        width: 19rem;
+        
+    }
+
+    .heading {
+        font-size: 1.3rem;
+    }
+    .info, .labelSize {
+        font-size: 1rem;
+    }
+
+    .fill, .fill2 {
+        height: 4rem;
+    }
+    .mainTitle {
+        font-size: 1.8rem;
+       }
+       .radioRateDiv {
+        margin: 2.4rem 0rem; 
+    }
+
+      /*page three */
+      #formThree, #formFour, #formFive {
+        height: 82rem; 
+       }
+
+    .labels3 {
+        font-size: 1.8rem;
+        margin-right: 0.5rem; 
+    }
+
+    .inputSize {
+        font-size: 1.8rem;
+    }
+
+    #pInfoTitle {
+        font-size: 3rem;;
+    }
+
+    #prefTitle, #paymentTitle, #roomSumTitle, #checkInTitle, .goodbyeFont{
+        font-size: 3rem; 
+    }
+    #firstName, #suburb, #city {
+        width: 16rem;
+    }
+    #email, #streetAddress {
+        width: 23rem;
+    }
+
+    .persInfoCont {
+        row-gap: 0.5rem;
+    }  
+    
+    .prefCont {
+        column-gap: 1rem;
+    }
+
+    .slider{
+        width: 300%;
+    }
+
+     /*page five */
+     .goodbyeFont {
+        font-size: 3.5rem;
+    }
+
+    .goodbyeFont2{
+        font-size: 2.5rem;
+    }
+
+    .checkIcon {
+        transform: scale(6.5);
+    }
+
+    .checkIconDiv {
+        padding-top: 7rem;
+    }
+}
+ 
+
+@media screen and (min-width: 1900px){
+
+    #bookingSystem{
+        width: 50vw;
+        height: 90vh;
+    }    
+    .pageContainer {
+            margin: 0rem 9rem;
+        }
+    
+    .pageSectionList {
+            padding: 2.5rem 0px 2.5rem 0px;
+        }
+    
+    .pageSection {
+        font-size: 1.5rem;
+    padding: 0.5rem 5.8rem;
+        }
+    
+    .progressBar {
+            width: inherit;
+            height: 2rem;
+            background-color: rgb(212, 218, 231);
+            margin: 0rem 0rem; 
+           
+        }
+        
+    .percentage {
+             height: 2rem;
+        } 
+        
+     .pgPercentage {
+              font-size: 1.5rem;
+        
+        }
+    
+    .form{
+        font-size: 1.7rem;
+        }
+    
+    #imagePageOneFig {
+        height: 65rem;
+        width: 100%;
+        
+        }
+
+        #imagePageOne {
+            transform: translateX(-12rem) translateY(-22rem);
+            height: 90rem;
+             width: 116rem;
+        }
+   
+    
+     .btnNext, .btnPrev{
+        width: 14rem;
+        height: 3.5rem;
+    
+            
+        }
+
+        #checkInDiv{
+            margin: 12rem 0rem 1rem 0rem;
+            width: 23rem;
+        }
+
+        #checkOutDiv {
+            width: 23rem;
+        }
+        /*page two */
+        #childDiv {
+            margin-left: 0.3rem;
+        }
+    
+        #formTwo {
+            height: 16rem;
+            margin-top: 5rem
+        }
+    
+        #premierDiv, #standardDiv {
+            height: 26rem;
+        }
+    
+        #premierImage, #standardImage {
+            height: 16rem;
+            width: 31rem;
+            
+        }
+    
+        .heading {
+            font-size: 1.3rem;
+        }
+        .info, .labelSize {
+            font-size: 1.2rem;
+        }
+    
+        .fill, .fill2 {
+            height: 4rem;
+        }
+       .mainTitle {
+        font-size: 2rem;
+       }
+       .radioRateDiv {
+        margin: 2.7rem 0rem; 
+    }
+
+      /*page three */
+      #formThree, #formFour, #formFive {
+        height: 82rem; 
+       }
+
+    .labels3 {
+        font-size: 2rem;
+        margin-right: 0.5rem; 
+    }
+
+    .inputSize {
+        font-size: 2rem;
+    }
+
+    #pInfoTitle {
+        font-size: 3rem;;
+    }
+
+    #prefTitle, #paymentTitle, #roomSumTitle, #checkInTitle, .goodbyeFont{
+        font-size: 3rem; 
+    }
+    #firstName, #suburb, #city {
+        width: 20rem;
+    }
+    #email, #streetAddress {
+        width: 33rem;
+    }
+
+    .persInfoCont {
+        row-gap: 0.5rem;
+    }  
+    
+    .prefCont {
+        column-gap: 1rem;
+    }
+
+    .slider{
+        width: 300%;
+    }
+
+     /*page five */
+     .goodbyeFont {
+        font-size: 3.5rem;
+    }
+
+    .goodbyeFont2{
+        font-size: 2.5rem;
+    }
+
+    .checkIcon {
+        transform: scale(6.5);
+    }
+
+    .checkIconDiv {
+        padding-top: 7rem;
+    }
+}
+
+
