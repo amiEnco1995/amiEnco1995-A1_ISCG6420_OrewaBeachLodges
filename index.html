@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orewa Beach Lodges</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Open+Sans&display=fallback"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/41f900d546.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/generalWebsite.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/adFinal.css" />
+    <link rel="stylesheet" href="css/bookingSystem.css" />
+  </head>
+  <body class="mainBody">
+    <div class="navBannerDiv">
+      <div class="mainNavDiv">
+        <ul class="mainNav">
+          <li class="mainNavLabel">
+            <i class="fa-solid fa-umbrella-beach"></i>
+          </li>
+          <li class="mainNavLabel"><a href="#aboutUsTitle">About Us</a></li>
+          <li class="mainNavLabel">
+            <a href="#bookTitleID">Make a Booking</a>
+          </li>
+          <li class="mainNavLabel"><a href="#contactID">Contact</a></li>
+          <li class="mainNavLabel">
+            <a href="designPlans/StoryboardOrewaBanner_A1.pdf" target="blank"
+              >Banner StoryBoard</a
+            >
+          </li>
+          <li class="mainNavLabel">
+            <a
+              href="designPlans/Storyboard_Horizontal_CarAdvert.pdf"
+              target="blank"
+              >Advert StoryBoard</a
+            >
+          </li>
+          <li class="mainNavLabel">
+            <a href="designPlans/WireframeBookingSystem.pdf" target="blank"
+              >Booking Wireframe</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div id="banner" onclick="openLink()">
+        <figure class="backgroundImage" id="firstBgImage">
+          <img
+            class="bannerImage"
+            id="firstImage"
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            srcset="
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_200.jpg   200w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_466.jpg   466w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_635.jpg   635w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_817.jpg   817w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_943.jpg   943w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_1063.jpg 1063w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_1141.jpg 1141w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_1269.jpg 1269w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_1383.jpg 1383w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_1400.jpg 1400w,
+              images/beachCollection10/the-beach-is-3km-long-standard1980.png                   1980w
+            "
+            src="images/beachCollection10/the-beach-is-3km-long-standard1980.png"
+            alt="Sunny orewa beach waves"
+          />
+          <h2 id="orewaTitleDetail">TAKE A TRIP TO</h2>
+          <h1 id="orewaTitle">OREWA</h1>
+        </figure>
+        <figure class="backgroundImage" id="secondBgImage">
+          <img
+            class="bannerImage"
+            id="secondImage"
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            srcset="
+              images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_200.jpg   200w,
+              images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_200.jpg   200w,
+              images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_434.jpg   434w,
+              images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_601.jpg   601w,
+              images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_752.jpg   752w,
+              images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_917.jpg   917w,
+              images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_1111.jpg 1111w,
+              images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_1233.jpg 1233w,
+              images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_1280.jpg 1280w,
+              images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_1351.jpg 1351w,
+              images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_1400.jpg 1400w,
+              images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_1980.png 1980w
+            "
+            src="images/kiteCollection10/so-many-kite-surfers-standard_yzt1vx_c_scale,w_1980.png"
+            alt="Many kite surfers in the sky"
+          />
+          <h2 id="secondTitle">DARE</h2>
+        </figure>
+        <figure class="backgroundImage" id="thirdBgImage">
+          <img
+            class="bannerImage"
+            id="thirdImage"
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            srcset="
+              images/horseCollection10/horse_riding2-standard_imur19_c_scale,w_200.jpg   200w,
+              images/horseCollection10/horse_riding2-standard_imur19_c_scale,w_483.jpg   483w,
+              images/horseCollection10/horse_riding2-standard_imur19_c_scale,w_897.jpg   897w,
+              images/horseCollection10/horse_riding2-standard_imur19_c_scale,w_977.jpg   977w,
+              images/horseCollection10/horse_riding2-standard_imur19_c_scale,w_1002.jpg 1002w,
+              images/horseCollection10/horse_riding2-standard_imur19_c_scale,w_1244.jpg 1244w,
+              images/horseCollection10/horse_riding2-standard_imur19_c_scale,w_1242.jpg 1242w,
+              images/horseCollection10/horse_riding2-standard_imur19_c_scale,w_1332.jpg 1332w,
+              images/horseCollection10/horse_riding2-standard_imur19_c_scale,w_1400.jpg 1400w,
+              images/horseCollection10/horse_riding2-standard_imur19_c_scale,w_1980.png 1980w
+            "
+            src="images/horseCollection10/horse_riding2-standard_imur19_c_scale,w_1980.png"
+            alt="Horse trekking on the beach"
+          />
+          <h2 id="thirdTitle">EXPLORE</h2>
+        </figure>
+        <figure class="backgroundImage" id="fourthBgImage">
+          <img
+            class="bannerImage"
+            id="fourthImage"
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            srcset="
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_200.jpg   200w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_466.jpg   466w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_635.jpg   635w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_817.jpg   817w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_943.jpg   943w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_1063.jpg 1063w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_1141.jpg 1141w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_1269.jpg 1269w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_1383.jpg 1383w,
+              images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_1400.jpg 1400w
+            "
+            src="images/beachCollection10/the-beach-is-3km-long-standard_wbzg8r_c_scale,w_1400.jpg"
+            alt="Sunny orewa beach waves"
+          />
+          <h2 id="fourthTitle">RELAX</h2>
+          <h2 id="fifthTitle">TAKE A TRIP TO</h2>
+          <h2 id="sixthTitle">OREWA</h2>
+          <p id="createdByText">Created by: Amiel Encomienda ID# 1556015</p>
+        </figure>
+      </div>
+    </div>
+    <div class="aboutUsSection">
+      <figure class="lodgeAboutFig">
+        <h2 class="mainWebTitle" id="aboutUsTitle">About Us</h2>
+        <img
+          id="lodgeAboutImg"
+          sizes="(max-width: 1400px) 100vw, 1400px"
+          srcset="
+            images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_200.jpg   200w,
+            images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_462.jpg   462w,
+            images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_646.jpg   646w,
+            images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_797.jpg   797w,
+            images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_941.jpg   941w,
+            images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_1072.jpg 1072w,
+            images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_1199.jpg 1199w,
+            images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_1309.jpg 1309w,
+            images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_1375.jpg 1375w,
+            images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_1400.jpg 1400w
+          "
+          src="images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_1400.jpg"
+          alt="sunny day at the lodge"
+        />
+        <div class="aboutDescDiv">
+          <p class="aboutText">
+            Welcome to Orewa Beach Lodges. A family estate that has since been
+            cultivating and distributing honey and wine since the year 1920.
+            <br /><br />In 2010 however, we decided to open our estate to
+            visitors. We have two olympic swimming pools, five jacuzzis and five
+            tennis courts to choose from. We also rent out goggles, bikes and
+            escooters. So come along and book a holiday at Orewa Beach Lodges.
+          </p>
+        </div>
+      </figure>
+    </div>
+    <div class="advertSection">
+      <div class="activity">
+        <i
+          class="fa-solid fa-van-shuttle activityIcon"
+          onclick="openTours()"
+        ></i>
+        <div class="activityText">
+          Want to know the best activities around Orewa?
+          <br /><br />Click the icon to start the fun.
+        </div>
+      </div>
+      <div class="activity">
+        <i
+          class="fa-solid fa-champagne-glasses activityIcon"
+          onclick="openFood()"
+        ></i>
+        <div class="activityText">
+          Want to explore the local cuisine?
+          <br /><br />Click the icon to start dining.
+        </div>
+      </div>
+      <div class="activity">
+        <i
+          class="fa-solid fa-person-hiking activityIcon"
+          onclick="openActivity()"
+        ></i>
+        <div class="activityText">
+          Looking for the best hiking spots?
+          <br /><br />Click the icon to start exploring.
+        </div>
+      </div>
+      <div id="myAdvert">
+        <figure id="backgroundAdFig">
+          <img
+            id="backgroundAdImg"
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            srcset="
+              images/desert_road_collection/roadGrey_1920x672_q0lq9u_c_scale,w_200.jpg   200w,
+              images/desert_road_collection/roadGrey_1920x672_q0lq9u_c_scale,w_579.jpg   579w,
+              images/desert_road_collection/roadGrey_1920x672_q0lq9u_c_scale,w_845.jpg   845w,
+              images/desert_road_collection/roadGrey_1920x672_q0lq9u_c_scale,w_1025.jpg 1025w,
+              images/desert_road_collection/roadGrey_1920x672_q0lq9u_c_scale,w_1192.jpg 1192w,
+              images/desert_road_collection/roadGrey_1920x672_q0lq9u_c_scale,w_1356.jpg 1356w,
+              images/desert_road_collection/roadGrey_1920x672_q0lq9u_c_scale,w_1377.jpg 1377w,
+              images/desert_road_collection/roadGrey_1920x672_q0lq9u_c_scale,w_1400.jpg 1400w
+            "
+            src="images/desert_road_collection/roadGrey_1920x672_q0lq9u_c_scale,w_1400.jpg"
+            alt="grey desert with a road"
+          />
+        </figure>
+        <div class="advert" id="autoDiv">
+          <figure id="autoFig">
+            <img
+              class="advert"
+              id="autoImg"
+              src="images/car_no_rims360w.png"
+              alt="red ferrari car"
+            />
+          </figure>
+          <figure class="advert" id="reifen1Fig">
+            <img
+              id="felge1Img"
+              sizes="(max-width: 262px) 100vw, 262px"
+              srcset="
+                images/right_rim_cut_collection/rims_right_cut_bgsree_c_scale,w_200.png 200w,
+                images/right_rim_cut_collection/rims_right_cut_bgsree_c_scale,w_238.png 238w,
+                images/right_rim_cut_collection/rims_right_cut_bgsree_c_scale,w_261.png 261w,
+                images/right_rim_cut_collection/rims_right_cut_bgsree_c_scale,w_262.png 262w
+              "
+              src="images/right_rim_cut_collection/rims_right_cut_bgsree_c_scale,w_262.png"
+              alt="rear rim"
+            />
+          </figure>
+          <figure class="advert" id="reifen2Fig">
+            <img
+              id="felge2Img"
+              src="images/left_rim_cut/rims_left_cut_hdltoq.png"
+              alt="front rim"
+            />
+          </figure>
+        </div>
+        <div class="advert" id="text1DivAd">
+          <h2 id="text1Ad">Spinning</h2>
+        </div>
+        <div class="advert" id="text2DivAd">
+          <h2 id="text2Ad">car wheels</h2>
+        </div>
+        <div class="advert" id="buttonAdLink" onclick="openAdSite()">
+          <p id="buttonAdMessage">Learn More!</p>
+        </div>
+        <div class="advert" id="restartScreenDiv">
+          <img
+            id="restartButtonAd"
+            src="images/restart_button.png"
+            alt="white restart image"
+          />
+        </div>
+        <div id="createdAdByDiv">
+          <p class="advert" id="createdAdByText">
+            Created by: Amiel Encomienda ID# 1556015
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bookingTitle">
+      <h2 class="mainWebTitle" id="bookTitleID">Book Accomodation</h2>
+    </div>
+    <div class="bookingSection">
+      <section id="bookingSystem">
+        <!--pageONE-->
+        <div class="pageContainer" id="pageOne">
+          <!--navigationBar-->
+          <ul class="pageSectionList">
+            <li class="pageSection sectionOne">Check In</li>
+            <li class="pageSection sectionInactive">Choose Room</li>
+            <li class="pageSection sectionInactive">Your Details</li>
+            <li class="pageSection sectionInactive">Summary</li>
+          </ul>
+          <!--progressBar-->
+          <div class="progressBar" id="pgOneProgBar">
+            <div class="percentage" id="pgOnePercentage">
+              <p class="pgPercentage">25%</p>
+            </div>
+          </div>
+          <!--content-->
+          <div class="content" id="pgOneContent">
+            <form action="" class="form" id="formOne">
+              <div id="checkInDiv">
+                <label class="labels" id="lblChkIn" for="checkIn"
+                  >Check In Date
+                </label>
+                <input
+                  type="date"
+                  id="checkIn"
+                  class="inputBox"
+                  name="checkInDate"
+                  required
+                />
+              </div>
+              <div id="checkOutDiv">
+                <label class="labels" id="lblChkOut" for="checkOut"
+                  >Check Out Date</label
+                >
+                <input
+                  type="date"
+                  id="checkOut"
+                  class="inputBox"
+                  name="checkOutDate"
+                  required
+                />
+              </div>
+              <div class="btnNextDiv">
+                <button type="button" class="btnNext" onclick="pgOneNext()">
+                  Next
+                </button>
+              </div>
+              <figure id="imagePageOneFig">
+                <img
+                  id="imagePageOne"
+                  sizes="(max-width: 1400px) 100vw, 1400px"
+                  srcset="
+                    images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_200.jpg   200w,
+                    images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_462.jpg   462w,
+                    images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_646.jpg   646w,
+                    images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_797.jpg   797w,
+                    images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_941.jpg   941w,
+                    images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_1072.jpg 1072w,
+                    images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_1199.jpg 1199w,
+                    images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_1309.jpg 1309w,
+                    images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_1375.jpg 1375w,
+                    images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_1400.jpg 1400w
+                  "
+                  src="images/lodgeCollection/lodge1920x_jiqkk2_c_scale,w_1400.jpg"
+                  alt="sunny day at the lodge"
+                />
+              </figure>
+            </form>
+          </div>
+        </div>
+        <!--pageTWO-->
+        <div class="pageContainer" id="pageTwo">
+          <!--navigationBar-->
+          <ul class="pageSectionList">
+            <li class="pageSection sectionInactive">Check In</li>
+            <li class="pageSection sectionTwo">Choose Room</li>
+            <li class="pageSection sectionInactive">Your Details</li>
+            <li class="pageSection sectionInactive">Summary</li>
+          </ul>
+          <!--progressBar-->
+          <div class="progressBar">
+            <div class="percentage" id="pgTwoPercentage">
+              <p class="pgPercentage">50%</p>
+            </div>
+          </div>
+          <div class="content" id="pgTwoContent">
+            <form action="" class="form" id="formTwo">
+              <figure class="pgTwoImageDiv" id="premierDiv">
+                <h1 class="mainTitle">Premier Room</h1>
+                <img
+                  class="pageTwoImage"
+                  id="premierImage"
+                  sizes="(max-width: 1400px) 100vw, 1400px"
+                  srcset="
+                    images/premierRoomCollection/premierRoom1920x_lz3hi5_c_scale,w_200.png   200w,
+                    images/premierRoomCollection/premierRoom1920x_lz3hi5_c_scale,w_506.png   506w,
+                    images/premierRoomCollection/premierRoom1920x_lz3hi5_c_scale,w_710.png   710w,
+                    images/premierRoomCollection/premierRoom1920x_lz3hi5_c_scale,w_859.png   859w,
+                    images/premierRoomCollection/premierRoom1920x_lz3hi5_c_scale,w_981.png   981w,
+                    images/premierRoomCollection/premierRoom1920x_lz3hi5_c_scale,w_1088.png 1088w,
+                    images/premierRoomCollection/premierRoom1920x_lz3hi5_c_scale,w_1191.png 1191w,
+                    images/premierRoomCollection/premierRoom1920x_lz3hi5_c_scale,w_1285.png 1285w,
+                    images/premierRoomCollection/premierRoom1920x_lz3hi5_c_scale,w_1382.png 1382w,
+                    images/premierRoomCollection/premierRoom1920x_lz3hi5_c_scale,w_1400.png 1400w
+                  "
+                  src="images/premierRoomCollection/premierRoom1920x_lz3hi5_c_scale,w_1400.png"
+                  alt="premier spacious lodge room"
+                />
+              </figure>
+              <div class="bedInfo" id="premiumInfo">
+                <div class="fill"></div>
+                <div id="maxPersonDiv">
+                  <h2 class="heading">Max Occupants</h2>
+                  <i class="fa-solid fa-user"></i>
+                  <p class="info" id="numMaxPerson">6</p>
+                </div>
+                <div class="radioRateDiv">
+                  <input
+                    type="radio"
+                    id="ratePrem"
+                    checked="checked"
+                    value="Standard"
+                  />
+                  <label class="labelSize radioLabel" for="ratePrem"
+                    >Standard Rate</label
+                  >
+                </div>
+                <div id="adultDiv">
+                  <label class="labelSize" for="numAdultsPrem">Adults</label>
+                  <input
+                    type="number"
+                    id="numAdultsPrem"
+                    value="0"
+                    min="0"
+                    max="18"
+                    required
+                  />
+                </div>
+                <div id="childDiv">
+                  <label class="labelSize" for="numChildrenPrem"
+                    >Children</label
+                  >
+                  <input
+                    type="number"
+                    id="numChildrenPrem"
+                    value="0"
+                    min="0"
+                    max="18"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="bedPrice" id="premiumPrice">
+                <div class="fill2"></div>
+                <div class="minStay">
+                  <h2 class="heading">Min Night Stays</h2>
+                  <p class="info">1 Night</p>
+                </div>
+                <div class="priceStay">
+                  <h2 class="heading">Price per Night</h2>
+                  <p class="info">$220.00</p>
+                </div>
+                <div class="roomDiv">
+                  <label class="labelSize" for="roomAmountPrem">Rooms</label>
+                  <input
+                    type="number"
+                    id="roomAmountPrem"
+                    value="0"
+                    min="0"
+                    max="3"
+                    required
+                  />
+                </div>
+              </div>
+              <figure class="pgTwoImgDiv" id="standardDiv">
+                <h1 class="mainTitle">Standard Room</h1>
+                <img
+                  class="pageTwoImage"
+                  id="standardImage"
+                  sizes="(max-width: 1400px) 100vw, 1400px"
+                  srcset="
+                    images/standardRoomCollection/standardRoom1920x_xqbmfl_c_scale,w_200.png   200w,
+                    images/standardRoomCollection/standardRoom1920x_xqbmfl_c_scale,w_481.png   481w,
+                    images/standardRoomCollection/standardRoom1920x_xqbmfl_c_scale,w_689.png   689w,
+                    images/standardRoomCollection/standardRoom1920x_xqbmfl_c_scale,w_832.png   832w,
+                    images/standardRoomCollection/standardRoom1920x_xqbmfl_c_scale,w_962.png   962w,
+                    images/standardRoomCollection/standardRoom1920x_xqbmfl_c_scale,w_1070.png 1070w,
+                    images/standardRoomCollection/standardRoom1920x_xqbmfl_c_scale,w_1175.png 1175w,
+                    images/standardRoomCollection/standardRoom1920x_xqbmfl_c_scale,w_1268.png 1268w,
+                    images/standardRoomCollection/standardRoom1920x_xqbmfl_c_scale,w_1359.png 1359w,
+                    images/standardRoomCollection/standardRoom1920x_xqbmfl_c_scale,w_1400.png 1400w
+                  "
+                  src="images/standardRoomCollection/standardRoom1920x_xqbmfl_c_scale,w_1400.png"
+                  alt="bright standard lodge room"
+                />
+              </figure>
+              <div class="bedInfo" id="standardInfo">
+                <div class="fill"></div>
+                <div id="maxPersonDiv">
+                  <h2 class="heading">Max Occupants</h2>
+                  <i class="fa-solid fa-user"></i>
+                  <p class="info" id="numMaxPerson">2</p>
+                </div>
+                <div class="radioRateDiv">
+                  <input
+                    type="radio"
+                    id="rateStand"
+                    checked="checked"
+                    value="Standard"
+                  />
+                  <label class="labelSize radioLabel" for="rateStand"
+                    >Standard Rate</label
+                  >
+                </div>
+                <div id="adultDiv">
+                  <label class="labelSize" for="numAdultsStand">Adults</label>
+                  <input
+                    type="number"
+                    id="numAdultsStand"
+                    value="0"
+                    min="0"
+                    max="6"
+                    required
+                  />
+                </div>
+                <div id="childDiv">
+                  <label class="labelSize" for="numChildrenStand"
+                    >Children</label
+                  >
+                  <input
+                    type="number"
+                    id="numChildrenStand"
+                    value="0"
+                    min="0"
+                    max="6"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="bedPrice" id="standardPrice">
+                <div class="fill2"></div>
+                <div class="minStay">
+                  <h2 class="heading">Min Night Stays</h2>
+                  <p class="info">1 Night</p>
+                </div>
+                <div class="priceStay">
+                  <h2 class="heading">Price per Night</h2>
+                  <p class="info">$180.00</p>
+                </div>
+                <div class="roomDiv">
+                  <label class="labelSize" for="roomAmountStand">Rooms</label>
+                  <input
+                    type="number"
+                    id="roomAmountStand"
+                    value="0"
+                    min="0"
+                    max="3"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="btnNextDiv" id="btnNextDiv">
+                <button type="button" class="btnNext" onclick="pgTwoNext()">
+                  Next
+                </button>
+              </div>
+              <div class="btnPrevDiv">
+                <button type="button" class="btnPrev" onclick="pgTwoPrev()">
+                  Previous
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="pageContainer" id="pageThree">
+          <!--navigationBar-->
+          <ul class="pageSectionList">
+            <li class="pageSection sectionInactive">Check In</li>
+            <li class="pageSection sectionInactive">Choose Room</li>
+            <li class="pageSection sectionThree">Your Details</li>
+            <li class="pageSection sectionInactive">Summary</li>
+          </ul>
+          <!--progressBar-->
+          <div class="progressBar">
+            <div class="percentage" id="pgThreePercentage">
+              <p class="pgPercentage">75%</p>
+            </div>
+          </div>
+          <div class="content" id="pgThreeContent">
+            <form action="" class="form" id="formThree">
+              <div class="detailsInputContainer">
+                <div class="persInfoCont">
+                  <h2 id="pInfoTitle" class="mainTitlePg3">
+                    Personal Information
+                  </h2>
+                  <label class="labels3 lblFN" for="firstName"
+                    >First Name:</label
+                  >
+                  <div class="persInfoSubCont" id="firstNameDiv">
+                    <input
+                      class="inputSize"
+                      type="text"
+                      id="firstName"
+                      required
+                      maxlength="20"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <label class="labels3 lblLN" for="lastName">Last Name:</label>
+                  <div class="persInfoSubCont" id="lastNameDiv">
+                    <input
+                      class="inputSize"
+                      type="text"
+                      id="lastName"
+                      required
+                      maxlength="50"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <label class="labels3 lblDOB" for="DOB">Date Of Birth:</label>
+                  <div class="persInfoSubCont" id="dateOfBirthDiv">
+                    <input type="date" id="DOB" class="inputSize" required />
+                  </div>
+                  <label for="streetAddress" class="labels3 lblStreetAd"
+                    >Street Address:</label
+                  >
+                  <div class="persInfoSubCont" id="streetAddressDiv">
+                    <input
+                      type="text"
+                      id="streetAddress"
+                      class="inputSize"
+                      required
+                      maxlength="80"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <label for="suburb" class="labels3 lblSuburb">Suburb:</label>
+                  <div class="persInfoSubCont" id="suburbDiv">
+                    <input
+                      type="text"
+                      id="suburb"
+                      required
+                      class="inputSize"
+                      maxlength="20"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <label for="city" class="labels3 lblCity">City:</label>
+                  <div class="persInfoSubCont" id="cityDiv">
+                    <input
+                      type="text"
+                      id="city"
+                      required
+                      class="inputSize"
+                      maxlength="20"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <label for="email" class="labels3 lblEmail"
+                    >Email Address:</label
+                  >
+                  <div class="persInfoSubCont" id="emailDiv">
+                    <input
+                      type="email"
+                      id="email"
+                      required
+                      class="inputSize"
+                      maxlength="80"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <label for="eta" class="labels3 lblETA"
+                    >Estimated Arrival Time:</label
+                  >
+                  <div class="persInfoSubCont" id="etaDiv">
+                    <input
+                      type="time"
+                      id="eta"
+                      required
+                      class="inputSize"
+                      value="00:00"
+                    />
+                  </div>
+                  <label for="purpose" class="labels3 lblTravel"
+                    >Purpose Of Travel:</label
+                  >
+                  <div class="persInfoSubCont" id="travelPurposeDiv">
+                    <select required class="inputSize" id="purpose">
+                      <option class="inputSize" value="" selected hidden>
+                        Select an option
+                      </option>
+                      <option class="inputSize" value="Leisure">Leisure</option>
+                      <option class="inputSize" value="Business">
+                        Business
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="prefCont">
+                  <h2 class="mainTitlePg3" id="prefTitle">Preferences</h2>
+                  <label class="labels3 lblParking" for="parkingSpace"
+                    >Book a parking space?</label
+                  >
+                  <div class="parkingYesNO prefSubCont" id="parkingSpace">
+                    <input
+                      name="parking"
+                      type="checkbox"
+                      id="parkingYes"
+                      value="yes"
+                    />
+                    <label class="labels3" for="parkingYes">Yes</label>
+                    <input
+                      name="parking"
+                      type="checkbox"
+                      id="parkingNo"
+                      value="no"
+                    />
+                    <label class="labels3" for="parkingNo">No</label>
+                  </div>
+                  <label class="labels3 lblCooking" for="cookingGear"
+                    >Need cooking facilities?</label
+                  >
+                  <div class="cookingYesNO prefSubCont" id="cookingGear">
+                    <input
+                      name="cooking"
+                      type="checkbox"
+                      id="cookingYes"
+                      value="yes"
+                    />
+                    <label class="labels3" for="cookingYes">Yes</label>
+                    <input
+                      name="cooking"
+                      type="checkbox"
+                      id="cookingNo"
+                      value="no"
+                    />
+                    <label class="labels3" for="cookingNo">No</label>
+                  </div>
+                  <label for="equipmentBook" class="labels3 lblEquipment"
+                    >Book equipment?</label
+                  >
+                  <div class="equipmentBookDiv prefSubCont">
+                    <input
+                      type="radio"
+                      name="bookGear"
+                      id="equipGoggles"
+                      value="goggles"
+                    />
+                    <label for="equipGoggles" class="labels3">goggles</label>
+                    <input
+                      type="radio"
+                      name="bookGear"
+                      id="equipEScoot"
+                      value="e-scooter"
+                    />
+                    <label for="equipEScoot" class="labels3">e-scooter</label>
+                    <input
+                      type="radio"
+                      name="bookGear"
+                      id="equipBike"
+                      value="bike"
+                    />
+                    <label for="equipBike" class="labels3">bike</label>
+                    <input
+                      type="radio"
+                      name="bookGear"
+                      id="equipNone"
+                      value="none"
+                    />
+                    <label for="equipNone" class="labels3">none</label>
+                  </div>
+                  <label for="colorChoose" class="labels3 lblColor"
+                    >Choose free room slippers colour?</label
+                  >
+                  <div class="colorSlipperDiv prefSubCont">
+                    <input type="color" id="colorChoose" value="#ff0000" />
+                  </div>
+                  <label for="rateEXP" class="labels3 lblRate"
+                    >Rate the booking experience from 1(needs work) to
+                    5(amazing):</label
+                  >
+                  <div class="sliderContainer prefSubCont lastPrefCont">
+                    <input
+                      class="slider"
+                      type="range"
+                      id="rateEXP"
+                      name="rateEXP"
+                      min="1"
+                      max="5"
+                      value="3"
+                    />
+                    <p class="labels3" id="output">
+                      Rating:<span class="labels3" id="outputValue"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="btnNextDiv" id="btnNextDiv">
+                <button type="button" class="btnNext" onclick="pgThreeNext()">
+                  Next
+                </button>
+              </div>
+              <div class="btnPrevDiv">
+                <button type="button" class="btnPrev" onclick="pgThreePrev()">
+                  Previous
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="pageContainer" id="pageFour">
+          <!--navigationBar-->
+          <ul class="pageSectionList">
+            <li class="pageSection sectionInactive">Check In</li>
+            <li class="pageSection sectionInactive">Choose Room</li>
+            <li class="pageSection sectionInactive">Your Details</li>
+            <li class="pageSection sectionFour">Summary</li>
+          </ul>
+          <!--progressBar-->
+          <div class="progressBar">
+            <div class="percentage" id="pgFourPercentage">
+              <p class="pgPercentage">100%</p>
+            </div>
+          </div>
+          <div class="content" id="pgFourContent">
+            <form action="" class="form" id="formFour">
+              <div class="detailsInputContainer">
+                <div class="checkInSumCont">
+                  <h2 class="mainTitlePg3 mainTitlePg4" id="checkInTitle">
+                    Check In Summary
+                  </h2>
+                  <label class="labels3 labels4 lblChkIn4" for=""
+                    >Check In Date:</label
+                  >
+                  <div class="checkDateSubCont pCheckIn">
+                    <p class="labels3 labels5" id="checkInDateStored"></p>
+                  </div>
+                  <label class="labels3 labels4 lblChkOut4" for=""
+                    >Check Out Date:</label
+                  >
+                  <div class="checkDateSubCont pCheckOut">
+                    <p class="labels3 labels5" id="checkOutDateStored"></p>
+                  </div>
+                  <div class="checkDateSubCont pTotalStay">
+                    <p class="labels3 labels4">
+                      Total Nights of Stay:
+                      <span class="labels3" id="totalStay"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="roomSumCont">
+                  <h2 class="mainTitlePg3 mainTitlePg4" id="roomSumTitle">
+                    Room Summary
+                  </h2>
+                  <label class="labels3 labels4 lblRmTypePrem" for=""
+                    >Room Type:</label
+                  >
+                  <div class="roomSubCont pRoomTypePrem">
+                    <p class="labels3 labels5" id="roomTypePrem"></p>
+                  </div>
+                  <label class="labels3 labels4 lblAmountRmPrem" for=""
+                    >Amount of Rooms:</label
+                  >
+                  <div class="roomSubCont pAmountRmPrem">
+                    <p class="labels3 labels5" id="amountRmPrem"></p>
+                  </div>
+                  <label class="labels3 labels4 lblAmountAdultsPrem" for=""
+                    >Total Adults:</label
+                  >
+                  <div class="roomSubCont pAmountAdultsPrem">
+                    <p class="labels3 labels5" id="amountAdultsPrem"></p>
+                  </div>
+                  <label class="labels3 labels4 lblAmountChildPrem" for=""
+                    >Total Children:</label
+                  >
+                  <div class="roomSubCont pAmountChildPrem">
+                    <p class="labels3 labels5" id="amountChildPrem"></p>
+                  </div>
+                  <label class="labels3 labels4 lblGuestTotalPrem" for=""
+                    >Total Guests:</label
+                  >
+                  <div class="roomSubCont pGuestTotalPrem">
+                    <p class="labels3 labels5" id="guestTotalPrem"></p>
+                  </div>
+                  <div class="checkDateSubCont pTotalCost">
+                    <p class="labels3 labels4">
+                      Total Cost of Stay:
+                      <span class="labels3" id="totalCost"></span>
+                    </p>
+                  </div>
+                </div>
+                <div class="persInfoCont">
+                  <h2 id="pInfoTitle" class="mainTitlePg3 mainTitlePg4">
+                    Personal Details Summary
+                  </h2>
+                  <label class="labels3 labels4 lblFN" for="firstName"
+                    >First Name:</label
+                  >
+                  <div class="persInfoSubCont" id="firstNameDiv">
+                    <!--firstName from storage here use p element-->
+                    <p class="labels3" id="firstNameStored"></p>
+                  </div>
+                  <label class="labels3 labels4 lblLN" for="lastName"
+                    >Last Name:</label
+                  >
+                  <div class="persInfoSubCont" id="lastNameDiv">
+                    <!--lastName from storage here use p element-->
+                    <p class="labels3" id="lastNameStored"></p>
+                  </div>
+                  <label class="labels3 labels4 lblDOB" for="DOB"
+                    >Date Of Birth:</label
+                  >
+                  <div class="persInfoSubCont" id="dateOfBirthDiv">
+                    <!--dateOfBirth from storage here use p element-->
+                    <p class="labels3" id="dateOfBirthStored"></p>
+                  </div>
+                  <label for="streetAddress" class="labels3 labels4 lblStreetAd"
+                    >Street Address:</label
+                  >
+                  <div class="persInfoSubCont" id="streetAddressDiv">
+                    <p class="labels3" id="streetAddressStored"></p>
+                  </div>
+                  <label for="suburb" class="labels3 labels4 lblSuburb"
+                    >Suburb:</label
+                  >
+                  <div class="persInfoSubCont" id="suburbDiv">
+                    <!--surburb from storage here use p element-->
+                    <p class="labels3" id="suburbStored"></p>
+                  </div>
+                  <label for="city" class="labels3 labels4 lblCity"
+                    >City:</label
+                  >
+                  <div class="persInfoSubCont" id="cityDiv">
+                    <!--city from storage here use p element-->
+                    <p class="labels3" id="cityStored"></p>
+                  </div>
+                  <label for="email" class="labels3 labels4 lblEmail"
+                    >Email Address:</label
+                  >
+                  <div class="persInfoSubCont" id="emailDiv">
+                    <!--email from storage here use p element-->
+                    <p class="labels3" id="emailStored"></p>
+                  </div>
+                  <label for="eta" class="labels3 lblETA labels4"
+                    >Estimated Arrival Time:</label
+                  >
+                  <div class="persInfoSubCont" id="etaDiv">
+                    <!--eta from storage here, use p element-->
+                    <p class="labels3" id="etaStored"></p>
+                  </div>
+                  <label for="purpose" class="labels3 labels4 lblTravel"
+                    >Purpose Of Travel:</label
+                  >
+                  <div class="persInfoSubCont" id="travelPurposeDiv">
+                    <!--purpose from storage here use p element-->
+                    <p class="labels3" id="purposeStored"></p>
+                  </div>
+                </div>
+                <br />
+                <div class="prefCont">
+                  <h2 class="mainTitlePg3 mainTitlePg4" id="prefTitle">
+                    Preferences Summary
+                  </h2>
+                  <label class="labels3 labels4 lblParking" for="parkingSpace"
+                    >Book a parking space:</label
+                  >
+                  <div class="parkingYesNO prefSubCont" id="parkingSpace">
+                    <!--parking from storage use p element-->
+                    <p class="labels3" id="parkingStored"></p>
+                  </div>
+                  <label class="labels3 labels4 lblCooking" for="cookingGear"
+                    >Need cooking facilities:</label
+                  >
+                  <div class="cookingYesNO prefSubCont" id="cookingGear">
+                    <!--cooking from storage use p element-->
+                    <p class="labels3" id="cookingStored"></p>
+                  </div>
+                  <label
+                    for="equipmentBook"
+                    class="labels3 labels4 lblEquipment"
+                    >Equipment booked:</label
+                  >
+                  <div class="equipmentBookDiv prefSubCont">
+                    <!--equipment from storage here use p element-->
+                    <p class="labels3" id="equipmentStored"></p>
+                  </div>
+                  <label for="colorChoose" class="labels3 labels4 lblColor"
+                    >Free room slippers colour:</label
+                  >
+                  <div class="colorSlipperDiv prefSubCont">
+                    <input
+                      type="color"
+                      id="colorChooseResult"
+                      value="#ff0000"
+                    />
+                    <p id="colorValue"></p>
+                  </div>
+                  <p for="rateEXP" class="labels3 labels4 lblRate rating">
+                    Booking experience rating:<span
+                      class="labels3 spanSpace"
+                      id="ratingStored"
+                    ></span>
+                  </p>
+                  <br />
+                  <div class="prefSubCont lastPrefCont paymentCont">
+                    <h2 class="mainTitlePg3 mainTitlePg4" id="paymentTitle">
+                      Payment Summary
+                    </h2>
+                    <p class="labels3">
+                      All payments are taken on the day of arrival
+                    </p>
+                    <br />
+                    <br />
+                    <br />
+                    <div class="newletterDiv">
+                      <input type="checkbox" id="newsLetterCheck" value="yes" />
+                      <label class="labels3" for="newsLetterCheck"
+                        >Receive the weekly newsletter</label
+                      >
+                    </div>
+                    <div class="conservationDiv">
+                      <input
+                        type="checkbox"
+                        id="conservationCheck"
+                        value="yes"
+                      />
+                      <label class="labels3" for="conservationCheck"
+                        >Do you agree with the local native conservation
+                        initiative agreement?</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btnNextDiv" id="btnNextDiv">
+                <button type="button" class="btnNext" onclick="pgFourNext()">
+                  Next
+                </button>
+              </div>
+              <div class="btnPrevDiv">
+                <button type="button" class="btnPrev" onclick="pgFourPrev()">
+                  Previous
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="pageContainer" id="pageFive">
+          <!--progressBar-->
+          <div class="progressBar">
+            <div class="percentage" id="pgFivePercentage">
+              <p class="pgPercentage">Complete</p>
+              <div class="content" id="pgFiveContent">
+                <form action="" class="form" id="formFive">
+                  <div class="detailsInputContainer">
+                    <div class="checkIconDiv">
+                      <i class="fa-regular fa-square-check checkIcon"></i>
+                    </div>
+                    <div class="goodbyeDiv">
+                      <h2 class="goodbyeFont">Your booking was successful!</h2>
+                    </div>
+                    <div class="goodbyeDiv">
+                      <h2 class="goodbyeFont2">
+                        Safe travels and see you soon!
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="btnNextDiv" id="btnNextDiv">
+                    <button
+                      type="button"
+                      class="btnNext"
+                      onclick="pgFiveFinish()"
+                    >
+                      Finish
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="contactDiv" id="contactID">
+      <div class="contactFont contactBox">
+        <p class="contactText">Contact Us:</p>
+        <p class="contactText">ph: 555-1234</p>
+        <p class="contactText">email:orewaBeachLodges@gmail.com</p>
+      </div>
+      <div class="socialDiv contactFont">
+        <p>Follow Us On:</p>
+        <div class="socialIcons">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+    <script src="js/banner.js"></script>
+    <script src="js/advert.js"></script>
+    <script src="js/bookingSystem.js"></script>
+  </body>
+</html>
