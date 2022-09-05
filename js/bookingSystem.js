@@ -388,7 +388,7 @@ let totalGuestStand = numAdultsStand + numChildrenStand;
       // To calculate the no. of days between two dates
       let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
 
-      document.getElementById("totalStay").innerHTML = Difference_In_Days; 
+      document.getElementById("totalStay").innerHTML = Difference_In_Days;
 
       //get room summary details
       let roomAmountPrem_stored = Number(localStorage.getItem("roomAmountPrem"));
@@ -450,7 +450,7 @@ let totalGuestStand = numAdultsStand + numChildrenStand;
 
         //populate total cost of stay
         let totalCostStay = (roomAmountPrem_stored * 220) + (roomAmountStand_stored * 180);
-        document.getElementById("totalCost").innerHTML = "$" + String(totalCostStay); 
+        document.getElementById("totalCost").innerHTML = "$" + parseFloat(String(totalCostStay)).toFixed(2); 
 
     }
     else{
