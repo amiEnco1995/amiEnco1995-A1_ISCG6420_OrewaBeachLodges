@@ -86,9 +86,10 @@
 }
 
 .activityText {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: white;
     margin: 2.5rem;
+    font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .advertSection{
@@ -342,7 +343,7 @@ a{
        }
 
        .activityText {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin: 4.5rem;
        }
 
@@ -395,7 +396,7 @@ a{
    }
 
    .activityText {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 4.5rem;
    }
 
@@ -448,7 +449,7 @@ a{
    }
 
    .activityText {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 4.5rem;
    }
 
@@ -501,7 +502,7 @@ a{
    }
 
    .activityText {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 6.5rem;
 }
 
@@ -554,7 +555,7 @@ a{
        }
     
        .activityText {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin: 6.5rem;
     }
     
@@ -608,7 +609,7 @@ a{
        }
     
        .activityText {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin: 6.5rem;
     }
     
@@ -661,7 +662,7 @@ a{
        }
     
        .activityText {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin: 6.5rem;
     }
     

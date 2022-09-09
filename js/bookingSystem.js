@@ -401,7 +401,7 @@ let totalGuestStand = numAdultsStand + numChildrenStand;
 
       // populate room type and amount of rooms   
       if(roomAmountPrem_stored > 0 && roomAmountStand_stored == 0) {
-      document.getElementById("roomTypePrem").innerHTML = "Premium";
+      document.getElementById("roomTypePrem").innerHTML = "Premier";
       document.getElementById("amountRmPrem").innerHTML = String(roomAmountPrem_stored); 
       }
       else if(roomAmountStand_stored > 0 && roomAmountPrem_stored == 0) {
@@ -409,7 +409,7 @@ let totalGuestStand = numAdultsStand + numChildrenStand;
       document.getElementById("amountRmPrem").innerHTML = String(roomAmountStand_stored);
       }
       else if(roomAmountPrem_stored > 0 && roomAmountStand_stored > 0) {
-      document.getElementById("roomTypePrem").innerHTML = "Premium & Standard";
+      document.getElementById("roomTypePrem").innerHTML = "Premier & Standard";
       document.getElementById("amountRmPrem").innerHTML = String(roomAmountPrem_stored + roomAmountStand_stored);
       }
       else {
@@ -425,7 +425,7 @@ let totalGuestStand = numAdultsStand + numChildrenStand;
 
       }
       else if(numAdultsPrem_stored > 0 && numAdultsStand_stored > 0) {
-      document.getElementById("amountAdultsPrem").innerHTML = "Premium: " + String(numAdultsPrem_stored) + " & " + "Standard: " + String(numAdultsStand_stored);
+      document.getElementById("amountAdultsPrem").innerHTML = "Premier: " + String(numAdultsPrem_stored) + " & " + "Standard: " + String(numAdultsStand_stored);
       }
       else{
       document.getElementById("amountAdultsPrem").innerHTML = "none";
@@ -439,7 +439,7 @@ let totalGuestStand = numAdultsStand + numChildrenStand;
       document.getElementById("amountChildPrem").innerHTML = String(numChildrenStand_stored);
       }
       else if(numChildrenPrem_stored > 0 && numChildrenStand_stored > 0) {
-      document.getElementById("amountChildPrem").innerHTML = "Premium: " + String(numChildrenPrem_stored) + " & " + "Standard: " + String(numChildrenStand_stored);
+      document.getElementById("amountChildPrem").innerHTML = "Premier: " + String(numChildrenPrem_stored) + " & " + "Standard: " + String(numChildrenStand_stored);
       }
       else{
           document.getElementById("amountChildPrem").innerHTML = "none"; 
